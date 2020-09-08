@@ -1,0 +1,60 @@
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.area-container {
+    display: grid;
+    grid-gap: 2vw;
+    grid-template-rows: 4vw 40vw 7vw 15vw 3vw 35vw 2vw 20vw 2vw 5vw;
+    grid-template-columns: 1vw repeat(5, 1fr) 1vw;
+    grid-template-areas:     ". logo . . about login ."
+    ". banner banner banner banner banner ."
+    ". . . . . . ."
+    ". promo1 promo2 promo3 promo4 promo5 ."
+    ". . . . . . ."
+    ". advantages advantages advantages form form ."
+    ". . . . . . ."
+    ". review1 review2 review3 review4 review5 ."
+    ". . . . . . ."
+    ". footer footer footer footer footer .";
+}
+
+.area-item-1 { grid-area: logo; }
+.area-item-2 { grid-area: about; }
+.area-item-3 { grid-area: login; }
+.area-item-4 { grid-area: banner; }
+.area-item-5 { grid-area: promo1; }
+.area-item-6 { grid-area: promo2; }
+.area-item-7 { grid-area: promo3; }
+.area-item-8 { grid-area: promo4; }
+.area-item-9 { grid-area: promo5; }
+.area-item-10 { 
+    grid-area: advantages;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "p10-2 p10-1"
+    "p10-3 p10-1"
+    "p10-4 p10-1"
+    "p10-5 p10-1"
+}
+
+
+.area-item-10-1 { grid-area: p10-1; }
+.area-item-10-2 { grid-area: p10-2; }
+.area-item-10-3 { grid-area: p10-3; }
+.area-item-10-4 { grid-area: p10-4; }
+.area-item-10-5 { grid-area: p10-5; }
+
+.area-item-11 { grid-area: form; }
+.area-item-12 { grid-area: review1; }
+.area-item-13 { grid-area: review2; }
+.area-item-14 { grid-area: review3; }
+.area-item-15 { grid-area: review4; }
+.area-item-16 { grid-area: review5; }
+.area-item-17 { grid-area: footer; }
+
